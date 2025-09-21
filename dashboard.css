@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.dashboard-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.dashboard-links .btn {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 25px;
+  border-radius: 8px;
+  background-color: #ff7f50;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-links .btn:hover {
+  background-color: #ff4500;
+}
+
+.dashboard-links .logout {
+  background-color: #ff0000;
+}
+
+.dashboard-links .logout:hover {
+  background-color: #cc0000;
+}
+
+.small-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.small-btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .dashboard-links .btn {
+    width: 100%;
+  }
+}

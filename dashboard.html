@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <h1>Hi, <span id="username">User</span>!</h1>
+      <p>Welcome to your dashboard. Here you can access all your features.</p>
+
+      <div class="dashboard-links">
+        <a href="web.html" class="btn">Our Services</a>
+        <a href="profile.html" class="btn">Your Profile</a>
+        <a href="cp.html" class="btn">Help & Support</a>
+        <a href="signout.html" class="btn logout">Logout</a>
+      </div>
+    </div>
+
+    <script>
+      const username = localStorage.getItem("username") || "User";
+      document.getElementById("username").textContent = username;
+    </script>
+
+    <a href="welcome.html" class="small-btn">← Back to Welcome</a>
+  </body>
+</html>

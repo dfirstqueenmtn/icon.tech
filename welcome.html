@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="welcome.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome, <span id="username">[User]</span>!</h1>
+      <p>Your registration was successful. Let’s get you started.</p>
+      <a class="btn" href="dashboard.html">Go to Dashboard</a>
+      <a class="btn" href="profile.html">Set Up Profile</a>
+    </div>
+
+    <script>
+      // Optional: dynamically show username if available
+      const username = localStorage.getItem("username") || "User";
+      document.getElementById("username").textContent = username;
+    </script>
+    <a href="index.html" class="small-btn">← Back to Main Website</a>
+  </body>
+</html>
