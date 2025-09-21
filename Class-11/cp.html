@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT PAGE</title>
+    <link rel="stylesheet" href="cp.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Contact Page -->
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>
+        We’d love to hear from you! Fill out the form below or reach us through
+        our contact details.
+      </p>
+
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <label for="name">Your Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="email">Your Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="message">Your Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Write your message..."
+          required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Our Contact Details</h3>
+        <p><strong>Email:</strong> icontech@gmail.com</p>
+        <p><strong>Phone:</strong> 08067955604</p>
+        <p>
+          <strong>Address:</strong> 5 Akinwunmi Kosemani Street, Lagos, Nigeria
+        </p>
+      </div>
+      <a href="doc.html" class="back-home">
+        <i class="fa-regular fa-house"></i> Return To Documentation
+      </a>
+      <a href="dashboard.html" class="back-home">
+        <i class="fa-regular fa-house"></i> Return To Dashboard
+      </a>
+    </section>
+  </body>
+</html>

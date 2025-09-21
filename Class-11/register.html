@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Website</title>
+    <link rel="stylesheet" href="register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>IconTech Academy Registration</h1>
+      <p>Fill the form below to join our tech programs</p>
+
+      <form action="welcome.html" method="get">
+        <label for="full name">Full Name</label>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="Full Name"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <label for="phone">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Phone Number"
+          required
+        />
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+        <p>Tech track</p>
+        <label for="track">Choose Tech Track:</label>
+        <select name="track" id="track" required>
+          <option disabled selected="--choose Tech Track--">
+            --choose Tech Track--
+          </option>
+          <option value="Full Stack">Full Stack Web Development</option>
+          <option value="frontend">frontend Development</option>
+          <option value="backtend">Backend Development</option>
+          <option value="datasci">Data Analysis</option>
+          <option value="UI/US">UI/Ux</option>
+          <option value="Cyber Security">Cyber Security</option>
+        </select>
+        <p>Skill level</p>
+        <div class="form-group">
+          <label> Skill level: </label>
+          <div class="options">
+            <input type="radio" id="beginner" name="level" value="beginner" />
+            <label for="begginer">Begginer</label>
+            <input
+              type="radio"
+              id="intermediate"
+              name="level"
+              value="intermediate"
+            />
+            <label for="intermediate">Intermediate</label>
+            <input
+              type="radio"
+              id="advanced"
+              name="level"
+              value="advanced"
+              required
+            />
+            <label for="advanced">Advanced</label>
+          </div>
+        </div>
+
+        <p>Programming Languages</p>
+        <div class="form-group">
+          <label>Programming Languages Known:</label>
+          <div class="options">
+            <input type="checkbox" id="html" name="languages" value="HTML" />
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="languages" value="CSS" />
+            <label for="css">CSS</label>
+            <input
+              type="checkbox"
+              id="node js"
+              name="languages"
+              value="node js"
+            />
+            <label for="python">Node Js</label>
+            <input type="checkbox" id="python" name="languages" value="JAVA" />
+            <label for="java">JAVA</label>
+          </div>
+        </div>
+
+        <!-- <p>GitHub</p>
+        <label for="github">GitHub / Portfolio Link:</label>
+        <input type="url" id="github" name="github" /> -->
+
+        <p>Reason</p>
+        <label for="reason">Why do you want to join?</label>
+        <textarea name="reason" id="reason" rows="3" required></textarea>
+
+        <button type="submit" class="btn">Register</button>
+
+        <a href="index.html" class="footer-btn">
+          <i class="fa-regular fa-house"></i>Go Back</a
+        >
+      </form>
+    </div>
+  </body>
+</html>
